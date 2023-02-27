@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RKO.Task._2.Core;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -11,6 +12,11 @@ namespace RKO.Task._2.View.Pages.TaskPages
             InitializeComponent();
         }
 
+
+        private void BtnMainPage_Click(object sender, RoutedEventArgs e)
+        {
+            CoreNavigate.MyConnection?.Navigate(new MainPage());
+        }
         private void BtnTask1_1_Click(object sender, RoutedEventArgs e)
         {
             try

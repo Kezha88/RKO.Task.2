@@ -51,6 +51,16 @@
                     </StackPanel>
                 </Grid>
             </Border>
+            <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top">
+                <Button Background="{DynamicResource AttentionToActionBrush}"
+                        Margin="720,10,0,0"
+                        x:Name="BtnMainPage"
+                        Click="BtnMainPage_Click"
+                        Foreground="{Binding ElementName=BtnMainPage, Path=BorderBrush}"
+                        Content="Back"
+                        ToolTip="Вернуться"/>
+            </StackPanel>
         </Grid>
     </Border>
 </Page>

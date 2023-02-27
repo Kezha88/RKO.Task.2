@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RKO.Task._2.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +16,16 @@ using System.Windows.Shapes;
 
 namespace RKO.Task._2.View.Pages.TaskPages
 {
-    /// <summary>
-    /// Логика взаимодействия для Task11Page.xaml
-    /// </summary>
     public partial class Task11Page : Page
     {
         public Task11Page()
         {
             InitializeComponent();
+        }
+
+        private void BtnMainPage_Click(object sender, RoutedEventArgs e)
+        {
+            CoreNavigate.MyConnection?.Navigate(new MainPage());
         }
 
         private void BtnTask11_Click(object sender, RoutedEventArgs e)
